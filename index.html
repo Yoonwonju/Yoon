@@ -2,10 +2,15 @@
 <html>
 <head>
 	<title>Welcome My Radiology Homepage!!!</title>
-	<link rel="stylesheet" href="style.css">	
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script	src="colors.js"></script>	
 </head>
 <body>
 	<h1><a href="index.html">Radiology</a></h1>
+	<input id="night_day" type="button" value="night" onclick="
+			nightDayHandler(this);
+		">
 	<div id="grid">
 		<ol>
 			<li><a href="1.html">XrayMachine</a></li>

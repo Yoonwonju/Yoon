@@ -3,19 +3,27 @@
 <head>
 	<title>MRI</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script	src="colors.js"></script>
 </head>
 <body>
 	<h1><a href="index.html">Radiology</a></h1>
+	<input id="night_day" type="button" value="night" onclick="
+			nightDayHandler(this);
+		">
 	<div id="grid">
 		<ol>
-			<li><a href="1.html" class="saw">XrayMachine</a></li>
+			<li><a href="1.html">XrayMachine</a></li>
 			<li><a href="2.html">CT</a></li>
-			<li><a href="3.html" class="saw" id="active">MRI</a></li>
+			<li><a href="3.html">MRI</a></li>
 		</ol>
 		<div>
 			<h2>Meaning of MRI?</h2>
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Structural_MRI_animation.ogv/220px--Structural_MRI_animation.ogv.jpg" width="300" target="Xraymachine">
-			<p style="margin-top:40px;">A variety of imaging techniques such as X-ray radiography, ultrasound, computed tomography (CT), nuclear medicine including positron emission tomography (PET), and magnetic resonance imaging (MRI) are used to diagnose or treat diseases. Interventional radiology is the performance of usually minimally invasive medical procedures with the guidance of imaging technologies such as those mentioned above.
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Structural_MRI_animation.ogv/220px--Structural_MRI_animation.ogv.jpg"
+			 width="300" target="Xraymachine">
+			<p style="margin-top:40px;">A variety of imaging techniques such as X-ray radiography, ultrasound, computed tomography (CT),
+			 nuclear medicine including positron emission tomography (PET), and magnetic resonance imaging (MRI) are used to diagnose or treat diseases.
+			  Interventional radiology is the performance of usually minimally invasive medical procedures with the guidance of imaging technologies such as those mentioned above.
 			</p>
 		</div>
 	</div>

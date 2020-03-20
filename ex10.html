@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<h1>Object 객체</h1>
+	<h2>Create 생성</h2>
+	<script>
+		var equipment={
+				"radiation":"CT",
+				"nonradiation":"US"
+		};
+		document.write("radiation:"+equipment.radiation+"<br>");
+		document.write("nonradiation:"+equipment.nonradiation+"<br>");
+		equipment.another="Computer";
+		document.write("another:"+equipment.another+"<br>");
+		equipment["data people"]="Yoon";
+		document.write("data people:"+equipment["data people"]+"<br>");		
+	</script>
+	<h2>Iterate 반복적으로 가져오기</h2>
+	<script>
+		for(var key in equipment){
+			document.write(key+':'+equipment[key]+'<br>');
+		}
+	</script>
+	<h2>Property 객체에 포함된 변수 & Method 객체에 포함된 함수</h2>
+	<script>
+		equipment.showAll = function(){
+			for(var key in this){
+				document.write(key+':'+this[key]+'<br>');
+			}
+		}
+		equipment.showAll();
+	</script>
+	</body>
+</html>

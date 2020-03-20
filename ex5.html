@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1>Conditional statements 조건문</h1>
+		<h2>Program</h2>
+		<script>
+			document.write("1<br>");
+			document.write("2<br>");
+			document.write("3<br>");
+			document.write("4<br>");			
+		</script>
+		<h2>IF-true</h2>
+		<script>
+			document.write('1<br>');
+			if(true){
+			document.write('2<br>');
+			}else{
+			document.write('3<br>');
+			}
+			document.write('4<br>');			
+		</script>
+		<h2>IF-false</h2>
+		<script>
+			document.write("1<br>");
+			if(false){
+			document.write("2<br>");
+			}else{
+			document.write("3<br>");
+			}
+			document.write("4<br>");			
+		</script>
+	</body>
+</html>
+
+<input id="night_day" type="button" value="night" onclick="
+if(document.querySelector('#night_day').value === 'night'){
+불리언 타입이 true일 때 실행될 코드
+} else {
+불리언 타입이 false일 때 실행될 코드
+}
+">
+
+if문의 뒤에 따라오는 괄호 안에는 Boolean 데이터 타입이 온다
+그 값이 true면 첫 번째 중괄호의 코드가 실행
+그 값이 false면 두 번째 중괄호의 코드가 실행
+
+* document.querySelector('#night_day').value: id 값이 night_day인 element의 value값

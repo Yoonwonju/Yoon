@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1>Loop & Array</h1>
+		<script>
+			var Equipments = ['X-ray Machine', 'Mammo', 'CT', 'MRI'];
+		</script>
+		<h2>Equipments</h2>
+		<ul>
+			<script>
+				var i=0;	
+				while(i<Equipments.length){
+					document.write('<li><a href="http://naver.com/'+Equipments[i]+'">'+Equipments[i]+'</li>');
+					i=i+1;
+				}
+			</script>
+		</ul>
+	</body>
+</html>
